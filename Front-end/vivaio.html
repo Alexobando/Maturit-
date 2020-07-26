@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<body>
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$db="vivaio";
+
+$specie =$_GET["specie"];
+$imagine =$_GET["imagine"];
+$descrizione =$_GET["descrizione"];
+$specie =$_GET["coltivazione"];
+$caratteristiche=$_GET["caratteristiche"];
+
+
+
+$connect = new mysql("localhost","username","password");
+mysql_select_db("db");
+
+$toinsert = "INSERT INTO specie
+			 (Nome,Descrizione,Caratteristica,Interno/Esterno)
+			 VALUES('$specie','$descrizione','$specie','$caratteristiche')";
+
+$result = mysql_query($toinsert);
+if(result){
+	echo("<br>Inserimento avvenuto correttamente");
+	}else{
+	echo("<br>Inserimento non eseguito")
+}
+?>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+
+<body background="Paginaweb.jpg" align="center">
+<br>
+<table align="center" style="width:100%" >
+<tr>
+<td><h1 align="center" >Vivaio</h1></td>
+<td><a href="Pianta.html"  ><font size="6">Piante<a></font></td>
+<td><a href="Personale.html"><font size="6">Personale<a></font></td>
+<td><a href="Attivita.html"><font size="6">Attivit�<a></font></td>
+<td><a href="Clienti.html"><font size="6">Clienti<a></font></td>
+<td><a href="Pagina Principale.html"><font size="6">Ritorna</font><a></td>
+</tr>
+
+</table>
+
+<FORM ACTION="vivaio.php" METHOD="GET">
+
+<p>Inserisci nome  personale</p>
+<p><input type="text" id="nome"> </p>
+<p>Inserisci nome  cognome</p>
+<p><input type="text" id="cognome"> </p>
+<p>Inserisci nome  codice fiscale</p>
+<p><input type="text" id="cf"> </p>
+<p>Scegli qualifica</p>
+<select name="qualifica" id="qaulifica">
+	<option value="Amministratore" >Amministratore</option>
+	<option value="Operaio"> Operaio </option>
+	<option value="Agronomo"> Agronomo </option>
+
+
+
+</select>
+<script>
+		document.write("hello world");
+		var qualifica = document.getElementById("qualifica).innerHTML;
+				document.write("<p>"+qualifica+"</p>");
+
+
+
+	</script>
+
+<INPUT TYPE=SUBMIT VALUE="Invia">
+&nbsp;
+<INPUT TYPE=RESET VALUE="Cancella Dati">
+
+</FORM>
+
+</body>
+</html>

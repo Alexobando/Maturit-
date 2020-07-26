@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+
+<body background="Paginaweb.jpg" align="center">
+<br>
+<table align="center" style="width:100%" >
+<tr>
+<td><h1 align="center" >Vivaio</h1></td>
+<td><a href="Pianta.html"  ><font size="6">Piante<a></font></td>
+<td><a href="Personale.html"><font size="6">Personale<a></font></td>
+<td><a href="Attività.html"><font size="6">Attività<a></font></td>
+<td><a href="Clienti.html"><font size="6">Clienti<a></font></td>
+<td><a href="Pagina Principale.html"><font size="6">Ritorna</font><a></td>
+</tr>
+
+</table>
+<FORM ACTION="vivaio.php" METHOD="GET">
+<p>Tipo di Cliente</p>
+<select name="qualifica">
+	<option value="Privato">Privato</option>
+	<option value="Azienda"> Azienda </option>
+
+</select>
+
+<p>data di prenotazione</p>
+<p><input type="date"> </p>
+<p>data di effetuazione</p>
+<p><input type="date"> </p>
+<p>Sono indispensabili  le piante </p>
+<input type="radio"  name="piante" id="si">
+<label for="si">si</label><br>
+<input type="radio" name="piante " id="no" >
+<label for="no">no</label><br>
+<INPUT TYPE=SUBMIT VALUE="Invia">
+&nbsp;
+<INPUT TYPE=RESET VALUE="Cancella Dati">
+</FORM>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+
+<body background="Paginaweb.jpg" align="center">
+<br>
+<table align="center" style="width:100%" >
+<tr>
+<td><h1 align="center" >Vivaio</h1></td>
+<td><a href="Pianta.html"  ><font size="6">Piante<a></font></td>
+<td><a href="Personale.html"><font size="6">Personale<a></font></td>
+<td><a href="Attivit�.html"><font size="6">Attivita'<a></font></td>
+<td><a href="Clienti.html"><font size="6">Clienti<a></font></td>
+<td><a href="Pagina Principale.html"><font size="6">Ritorna</font><a></td>
+</tr>
+
+</table>
+
+<FORM ACTION="/Vivaio/Back-end/vivaio.php" METHOD="GET">
+<p>Inserisci nome  pianta</p>
+<p><input type="text" name="specie" id = "specie"> </p>
+<p>Inserisci imagine</p>
+<p><input type="file" name="immagine" id="immagine"></p>
+<p>Descrizione </p>
+<p><input type="text" name="descrizione" id="descrizione"></p>
+<p>Informazioni relative al modo di coltivazione</p>
+<p><input type="text" id="coltivazione" name="coltivazione"></p>
+<p>Caratteristiche</p>
+<p><input type="text" name="caratteristiche" id="caratteristiche"></p>
+<p>Tipo di pianta</p>
+<input type="radio"  name="tipo" id="1">
+<label for="1">interno</label><br>
+<input type="radio" name="tipo" id="0" >
+<label for="0">esterno</label><br>
+<p>Prezzo</p>
+<p><input type="text" id="prezzo"></p>
+<p>Numero di piante </p>
+<input type="number"  min="0" max="100" step="1" value="0" id="numero" >
+<INPUT TYPE=SUBMIT VALUE="Invia">
+&nbsp;
+<INPUT TYPE=RESET VALUE="Cancella Dati">
+</FORM>
+
+</body>
+</html>
