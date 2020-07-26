@@ -1,2 +1,2 @@
-# Maturit-
-IL progetto fatto per l'esame di maturità
+# Progetto scuola
+la creazione fi un vivaio collegato con il suo database+
